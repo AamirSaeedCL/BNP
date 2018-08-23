@@ -1,0 +1,11 @@
+C:\Users\asaeed11\Downloads\BNPP-AddItUp\WebApi\WebApi\bin\Debug\netcoreapp2.0\WebApi.deps.json
+C:\Users\asaeed11\Downloads\BNPP-AddItUp\WebApi\WebApi\bin\Debug\netcoreapp2.0\WebApi.runtimeconfig.json
+C:\Users\asaeed11\Downloads\BNPP-AddItUp\WebApi\WebApi\bin\Debug\netcoreapp2.0\WebApi.runtimeconfig.dev.json
+C:\Users\asaeed11\Downloads\BNPP-AddItUp\WebApi\WebApi\bin\Debug\netcoreapp2.0\WebApi.dll
+C:\Users\asaeed11\Downloads\BNPP-AddItUp\WebApi\WebApi\bin\Debug\netcoreapp2.0\WebApi.pdb
+C:\Users\asaeed11\Downloads\BNPP-AddItUp\WebApi\WebApi\obj\Debug\netcoreapp2.0\WebApi.csprojAssemblyReference.cache
+C:\Users\asaeed11\Downloads\BNPP-AddItUp\WebApi\WebApi\obj\Debug\netcoreapp2.0\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\asaeed11\Downloads\BNPP-AddItUp\WebApi\WebApi\obj\Debug\netcoreapp2.0\WebApi.AssemblyInfoInputs.cache
+C:\Users\asaeed11\Downloads\BNPP-AddItUp\WebApi\WebApi\obj\Debug\netcoreapp2.0\WebApi.AssemblyInfo.cs
+C:\Users\asaeed11\Downloads\BNPP-AddItUp\WebApi\WebApi\obj\Debug\netcoreapp2.0\WebApi.dll
+C:\Users\asaeed11\Downloads\BNPP-AddItUp\WebApi\WebApi\obj\Debug\netcoreapp2.0\WebApi.pdb
