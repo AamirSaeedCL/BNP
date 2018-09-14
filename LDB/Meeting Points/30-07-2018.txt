@@ -1,0 +1,32 @@
+1) FSR  : Double in length
+2) Email and  Address fields doubel in length
+3) Date Submited and FSR status.
+Requester , 
+
+3 LDP admins --> UK, Sign
+
+
+1) New Panel for Geosite
+2) Provider Panel (with provder info)
+3) Vendor Detail Information Panel (Meta Data)  --> Master Configuration. Should be display as readonly.
+4) Contract Ref # Number.
+5) divide the screen with two main panels (Search top and below screen).
+6) Address, Special Delivery , Entity Name should be multi-lines.
+7) Bold Blue are mandatory fields.
+8) Line --> License Responsilbilty.
+9) Inbound and outbound should be next to each other.
+10) New Service Id and Related Service Id should be next to each other.
+11) Related Service Id with Pending Discount Date with Related Service Cost
+12) Scope Of Service/Background and Risk multiline  
+13) Quote Request, 
+Comments should be multi-line.
+
+14) "Request Quote" Button.
+15) 
+
+
+Angular (Material -- CSS Framework)
+Bootstrap - CSS framework
+
+
+

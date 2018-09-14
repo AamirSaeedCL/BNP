@@ -1,0 +1,5 @@
+D:\Projects\DotNet\LDB\AR.LinesManagementSystem\AR.LinesManagementSystem
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=AR.LinesManagementSystem.Api
+--content-root=D:\Projects\DotNet\LDB\AR.LinesManagementSystem\AR.LinesManagementSystem
+--file=

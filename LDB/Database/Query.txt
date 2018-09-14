@@ -1,0 +1,37 @@
+
+/****************************************************************************/
+-- To find internal values and descriptions used in AR system forms
+/****************************************************************************/
+
+-- To Find EnumId of the related form
+SELECT NAME,  SCHEMAID
+FROM ARSCHEMA 
+WHERE Name Like '%circuit%' 
+  -- and RowNum < 100
+
+-- To Find all values for a Field in the related form/view - LPR
+SELECT DISTINCT S.NAME, V.ENUMID as ReportedSource, V.VALUE as Description, F.FIELDNAME, F.FIELDNAME + ' - '+ CONVERT(VARCHAR(1000),V.enumId) [Field], vuiName, f.fieldId
+FROM ARSCHEMA S 
+INNER JOIN FIELD F
+              ON S.SCHEMAID = F.SCHEMAID
+       INNER JOIN FIELD_ENUM_VALUES V
+              ON F.SCHEMAID = V.SCHEMAID AND F.FIELDID = V.FIELDID
+       INNER JOIN dbo.vui VI
+              ON F.schemaId = Vi.schemaId
+WHERE S.SCHEMAID = 231
+       AND vuiName = 'WSC View'
+AND F.FIELDNAME IN ('Replacement status','Target Group','SNS Charged by Carrier?','Record Type','Circuit Role','Delivery Category','License Responsibility','MNSA Circuit?','Upgrade Reason')
+Order by FIELDNAME
+
+--To Find all values for a Field in the related form/view - LDB Circuits
+SELECT DISTINCT S.NAME, V.ENUMID as ReportedSource, V.VALUE as Description, F.FIELDNAME, F.FIELDNAME + ' - '+ CONVERT(VARCHAr(1000),V.enumId) [Field]--, vuiName, f.fieldId
+FROM ARSCHEMA S 
+INNER JOIN FIELD F
+              ON S.SCHEMAID = F.SCHEMAID
+       INNER JOIN FIELD_ENUM_VALUES V
+              ON F.SCHEMAID = V.SCHEMAID AND F.FIELDID = V.FIELDID
+       INNER JOIN dbo.vui VI
+              ON F.schemaId = Vi.schemaId
+WHERE S.SCHEMAID = 40
+AND F.FIELDNAME IN ('status', 'Target Group', 'SNS Charged by Carrier?', 'Record Type' ,'Circuit Role' ,'Delivery Category' ,'License Responsibility' ,'MNSA Circuit?' ,'Upgrade Reason')
+Order by FIELDNAME

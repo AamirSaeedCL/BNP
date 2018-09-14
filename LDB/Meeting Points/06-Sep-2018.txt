@@ -1,0 +1,16 @@
+Line Request:
+
+1) Provider: 2nd line move to circuit details section.
+2) Create new section for "Circuit  Detail" and copy all the 
+fields from supplier section.
+4) Currency Dropdown and use the SLB curency master data.
+5) Quote request should be a seperate panel.
+6) Budgeted Circuit?  (Yes/No)
+9) Business Case and comments:  Seperate section & file upload.
+10) Approval - Add the file upload section.
+11) Approval - History button.
+12) Copy Existing LPR. (Should be in all the forms).
+13) Email notification on changing status in approval.
+14) Charges Detail ---> Seperate line Between total cost and monthly cost.
+15) Sum the value of all the cost.
+16) 

@@ -1,0 +1,305 @@
+2018-09-13T16:58:13.0370385+01:00  [INF] Executed DbCommand ("101"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0" (0723d8ff)
+2018-09-13T16:58:13.1440831+01:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ConnectivityTypes] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-13T16:58:13.2998231+01:00 0HLGPI6QUFSBL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51558/api/ConnectivityCategory   (ca22a1cb)
+2018-09-13T16:58:13.3133262+01:00 0HLGPI6QUFSBL:00000001 [INF] Policy execution successful. (0204925d)
+2018-09-13T16:58:13.4089382+01:00 0HLGPI6QUFSBL:00000001 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"ArDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-09-13T16:58:13.4155305+01:00 0HLGPI6QUFSBL:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:58:13.4161327+01:00 0HLGPI6QUFSBL:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:58:13.4170997+01:00 0HLGPI6QUFSBL:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-09-13T16:58:13.4175506+01:00 0HLGPI6QUFSBL:00000001 [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-09-13T16:58:13.4292844+01:00 0HLGPI6QUFSBL:00000001 [INF] Executing action method "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.GetConnectivityCategories (AR.LinesManagementSystem.Api)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T16:58:13.4662538+01:00 0HLGPI6QUFSBL:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[CreatedBy], [c].[Description], [c].[Name], [c].[UpdatedAt], [c].[UpdatedBy]
+FROM [ConnectivityCategories] AS [c]" (0723d8ff)
+2018-09-13T16:58:13.5163115+01:00 0HLGPI6QUFSBL:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-13T16:58:13.5566212+01:00 0HLGPI6QUFSBL:00000001 [INF] Executed action "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.GetConnectivityCategories (AR.LinesManagementSystem.Api)" in 150.9107ms (afa2e885)
+2018-09-13T16:58:13.5586453+01:00 0HLGPI6QUFSBL:00000001 [INF] Request finished in 275.9101ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-13T16:58:20.4011322+01:00 0HLGPI6QUFSBL:00000002 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:51558/api/ConnectivityCategory/6   (ca22a1cb)
+2018-09-13T16:58:20.4016300+01:00 0HLGPI6QUFSBL:00000002 [INF] Policy execution successful. (0204925d)
+2018-09-13T16:58:20.4030457+01:00 0HLGPI6QUFSBL:00000002 [INF] Request finished in 2.0754ms 204  (791a596a)
+2018-09-13T16:58:20.4111863+01:00 0HLGPI6QUFSBL:00000003 [INF] Request starting HTTP/1.1 DELETE http://localhost:51558/api/ConnectivityCategory/6   (ca22a1cb)
+2018-09-13T16:58:20.4115349+01:00 0HLGPI6QUFSBL:00000003 [INF] Policy execution successful. (0204925d)
+2018-09-13T16:58:20.4341916+01:00 0HLGPI6QUFSBL:00000003 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"ArDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-09-13T16:58:20.4353000+01:00 0HLGPI6QUFSBL:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:58:20.4359521+01:00 0HLGPI6QUFSBL:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:58:20.4368590+01:00 0HLGPI6QUFSBL:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-09-13T16:58:20.4371432+01:00 0HLGPI6QUFSBL:00000003 [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-09-13T16:58:20.4531268+01:00 0HLGPI6QUFSBL:00000003 [INF] Executing action method "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.DeleteConnectivityCategory (AR.LinesManagementSystem.Api)" with arguments (["6"]) - ModelState is Valid (ba7f4ac2)
+2018-09-13T16:58:20.5054898+01:00 0HLGPI6QUFSBL:00000003 [INF] Executed DbCommand ("22"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[CreatedAt], [e].[CreatedBy], [e].[Description], [e].[Name], [e].[UpdatedAt], [e].[UpdatedBy]
+FROM [ConnectivityCategories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-09-13T16:58:20.5721276+01:00 0HLGPI6QUFSBL:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [ConnectivityCategories]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-09-13T16:58:20.5813096+01:00 0HLGPI6QUFSBL:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-13T16:58:20.5827982+01:00 0HLGPI6QUFSBL:00000003 [INF] Executed action "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.DeleteConnectivityCategory (AR.LinesManagementSystem.Api)" in 149.2048ms (afa2e885)
+2018-09-13T16:58:20.5830456+01:00 0HLGPI6QUFSBL:00000003 [INF] Request finished in 172.0641ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-13T16:58:20.5962067+01:00 0HLGPI6QUFSBL:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:51558/api/ConnectivityCategory   (ca22a1cb)
+2018-09-13T16:58:20.5965436+01:00 0HLGPI6QUFSBL:00000004 [INF] Policy execution successful. (0204925d)
+2018-09-13T16:58:20.5977629+01:00 0HLGPI6QUFSBL:00000004 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"ArDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-09-13T16:58:20.5986606+01:00 0HLGPI6QUFSBL:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:58:20.5992452+01:00 0HLGPI6QUFSBL:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:58:20.6001451+01:00 0HLGPI6QUFSBL:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-09-13T16:58:20.6005026+01:00 0HLGPI6QUFSBL:00000004 [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-09-13T16:58:20.6006742+01:00 0HLGPI6QUFSBL:00000004 [INF] Executing action method "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.GetConnectivityCategories (AR.LinesManagementSystem.Api)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T16:58:20.6023772+01:00 0HLGPI6QUFSBL:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[CreatedBy], [c].[Description], [c].[Name], [c].[UpdatedAt], [c].[UpdatedBy]
+FROM [ConnectivityCategories] AS [c]" (0723d8ff)
+2018-09-13T16:58:20.6036902+01:00 0HLGPI6QUFSBL:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-13T16:58:20.6041117+01:00 0HLGPI6QUFSBL:00000004 [INF] Executed action "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.GetConnectivityCategories (AR.LinesManagementSystem.Api)" in 6.87ms (afa2e885)
+2018-09-13T16:58:20.6043105+01:00 0HLGPI6QUFSBL:00000004 [INF] Request finished in 8.2629ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-13T16:58:20.6085405+01:00 0HLGPI6QUFSBL:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:51558/api/ConnectivityCategory   (ca22a1cb)
+2018-09-13T16:58:20.6087575+01:00 0HLGPI6QUFSBL:00000005 [INF] Policy execution successful. (0204925d)
+2018-09-13T16:58:20.6094845+01:00 0HLGPI6QUFSBL:00000005 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"ArDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-09-13T16:58:20.6107836+01:00 0HLGPI6QUFSBL:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:58:20.6115119+01:00 0HLGPI6QUFSBL:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:58:20.6123587+01:00 0HLGPI6QUFSBL:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-09-13T16:58:20.6126813+01:00 0HLGPI6QUFSBL:00000005 [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-09-13T16:58:20.6128309+01:00 0HLGPI6QUFSBL:00000005 [INF] Executing action method "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.GetConnectivityCategories (AR.LinesManagementSystem.Api)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T16:58:20.6136201+01:00 0HLGPI6QUFSBL:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[CreatedBy], [c].[Description], [c].[Name], [c].[UpdatedAt], [c].[UpdatedBy]
+FROM [ConnectivityCategories] AS [c]" (0723d8ff)
+2018-09-13T16:58:20.6139643+01:00 0HLGPI6QUFSBL:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-13T16:58:20.6141699+01:00 0HLGPI6QUFSBL:00000005 [INF] Executed action "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.GetConnectivityCategories (AR.LinesManagementSystem.Api)" in 5.1864ms (afa2e885)
+2018-09-13T16:58:20.6144994+01:00 0HLGPI6QUFSBL:00000005 [INF] Request finished in 5.9796ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-13T16:58:42.4974598+01:00 0HLGPI6QUFSBL:00000006 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:51558/api/ConnectivityCategory   (ca22a1cb)
+2018-09-13T16:58:42.4977136+01:00 0HLGPI6QUFSBL:00000006 [INF] Policy execution successful. (0204925d)
+2018-09-13T16:58:42.4979899+01:00 0HLGPI6QUFSBL:00000006 [INF] Request finished in 0.5436ms 204  (791a596a)
+2018-09-13T16:58:42.5023406+01:00 0HLGPI6QUFSBL:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:51558/api/ConnectivityCategory application/json 60 (ca22a1cb)
+2018-09-13T16:58:42.5025988+01:00 0HLGPI6QUFSBL:00000007 [INF] Policy execution successful. (0204925d)
+2018-09-13T16:58:42.5075367+01:00 0HLGPI6QUFSBL:00000007 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"ArDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-09-13T16:58:42.5083728+01:00 0HLGPI6QUFSBL:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:58:42.5089227+01:00 0HLGPI6QUFSBL:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:58:42.5097742+01:00 0HLGPI6QUFSBL:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-09-13T16:58:42.5101060+01:00 0HLGPI6QUFSBL:00000007 [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-09-13T16:58:42.5303209+01:00 0HLGPI6QUFSBL:00000007 [INF] Executing action method "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.SaveConnectivityCategory (AR.LinesManagementSystem.Api)" with arguments (["AR.LinesManagementSystem.Models.ConnectivityCategory"]) - ModelState is Valid (ba7f4ac2)
+2018-09-13T16:58:42.5420180+01:00 0HLGPI6QUFSBL:00000007 [INF] Executed DbCommand ("1"ms) [Parameters=["@__name_0='?' (Size = 250), @__Id_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id], [r].[CreatedAt], [r].[CreatedBy], [r].[Description], [r].[Name], [r].[UpdatedAt], [r].[UpdatedBy]
+FROM [ConnectivityCategories] AS [r]
+WHERE ([r].[Name] = @__name_0) AND ([r].[Id] <> @__Id_1)" (0723d8ff)
+2018-09-13T16:58:42.5566384+01:00 0HLGPI6QUFSBL:00000007 [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?', @p1='?', @p2='?' (Size = 500), @p3='?' (Size = 250), @p4='?', @p5='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [ConnectivityCategories] ([CreatedAt], [CreatedBy], [Description], [Name], [UpdatedAt], [UpdatedBy])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [Id]
+FROM [ConnectivityCategories]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2018-09-13T16:58:42.5609653+01:00 0HLGPI6QUFSBL:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-13T16:58:42.5635462+01:00 0HLGPI6QUFSBL:00000007 [INF] Executed action "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.SaveConnectivityCategory (AR.LinesManagementSystem.Api)" in 56.3299ms (afa2e885)
+2018-09-13T16:58:42.5651837+01:00 0HLGPI6QUFSBL:00000007 [INF] Request finished in 62.9082ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-13T16:58:42.5732386+01:00 0HLGPI6QUFSBL:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:51558/api/ConnectivityCategory   (ca22a1cb)
+2018-09-13T16:58:42.5734611+01:00 0HLGPI6QUFSBL:00000008 [INF] Policy execution successful. (0204925d)
+2018-09-13T16:58:42.5742573+01:00 0HLGPI6QUFSBL:00000008 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"ArDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-09-13T16:58:42.5752275+01:00 0HLGPI6QUFSBL:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:58:42.5757899+01:00 0HLGPI6QUFSBL:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:58:42.5766224+01:00 0HLGPI6QUFSBL:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-09-13T16:58:42.5769109+01:00 0HLGPI6QUFSBL:00000008 [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-09-13T16:58:42.5770751+01:00 0HLGPI6QUFSBL:00000008 [INF] Executing action method "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.GetConnectivityCategories (AR.LinesManagementSystem.Api)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T16:58:42.5777015+01:00 0HLGPI6QUFSBL:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[CreatedBy], [c].[Description], [c].[Name], [c].[UpdatedAt], [c].[UpdatedBy]
+FROM [ConnectivityCategories] AS [c]" (0723d8ff)
+2018-09-13T16:58:42.5779713+01:00 0HLGPI6QUFSBL:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-13T16:58:42.5782752+01:00 0HLGPI6QUFSBL:00000008 [INF] Executed action "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.GetConnectivityCategories (AR.LinesManagementSystem.Api)" in 4.594ms (afa2e885)
+2018-09-13T16:58:42.5784112+01:00 0HLGPI6QUFSBL:00000008 [INF] Request finished in 5.2912ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-13T16:59:00.2069727+01:00 0HLGPI6QUFSBL:00000009 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:51558/api/ConnectivityCategory   (ca22a1cb)
+2018-09-13T16:59:00.2073598+01:00 0HLGPI6QUFSBL:00000009 [INF] Policy execution successful. (0204925d)
+2018-09-13T16:59:00.2076112+01:00 0HLGPI6QUFSBL:00000009 [INF] Request finished in 1.2565ms 204  (791a596a)
+2018-09-13T16:59:00.2829515+01:00 0HLGPI6QUFSBL:0000000A [INF] Request starting HTTP/1.1 POST http://localhost:51558/api/ConnectivityCategory application/json 59 (ca22a1cb)
+2018-09-13T16:59:00.2833287+01:00 0HLGPI6QUFSBL:0000000A [INF] Policy execution successful. (0204925d)
+2018-09-13T16:59:00.2841788+01:00 0HLGPI6QUFSBL:0000000A [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"ArDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-09-13T16:59:00.2880985+01:00 0HLGPI6QUFSBL:0000000A [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:59:00.3081117+01:00 0HLGPI6QUFSBL:0000000A [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:59:00.3418060+01:00 0HLGPI6QUFSBL:0000000A [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-09-13T16:59:00.3420982+01:00 0HLGPI6QUFSBL:0000000A [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-09-13T16:59:00.3430563+01:00 0HLGPI6QUFSBL:0000000A [INF] Executing action method "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.SaveConnectivityCategory (AR.LinesManagementSystem.Api)" with arguments (["AR.LinesManagementSystem.Models.ConnectivityCategory"]) - ModelState is Valid (ba7f4ac2)
+2018-09-13T16:59:00.3529932+01:00 0HLGPI6QUFSBL:0000000A [INF] Executed DbCommand ("8"ms) [Parameters=["@__name_0='?' (Size = 250), @__Id_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Id], [r].[CreatedAt], [r].[CreatedBy], [r].[Description], [r].[Name], [r].[UpdatedAt], [r].[UpdatedBy]
+FROM [ConnectivityCategories] AS [r]
+WHERE ([r].[Name] = @__name_0) AND ([r].[Id] <> @__Id_1)" (0723d8ff)
+2018-09-13T16:59:00.3555580+01:00 0HLGPI6QUFSBL:0000000A [INF] Executed DbCommand ("0"ms) [Parameters=["@p0='?', @p1='?', @p2='?' (Size = 500), @p3='?' (Size = 250), @p4='?', @p5='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [ConnectivityCategories] ([CreatedAt], [CreatedBy], [Description], [Name], [UpdatedAt], [UpdatedBy])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [Id]
+FROM [ConnectivityCategories]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2018-09-13T16:59:00.3782480+01:00 0HLGPI6QUFSBL:0000000A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-13T16:59:00.3785394+01:00 0HLGPI6QUFSBL:0000000A [INF] Executed action "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.SaveConnectivityCategory (AR.LinesManagementSystem.Api)" in 94.9697ms (afa2e885)
+2018-09-13T16:59:00.3787612+01:00 0HLGPI6QUFSBL:0000000A [INF] Request finished in 96.0144ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-13T16:59:00.3902691+01:00 0HLGPI6QUFSBL:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:51558/api/ConnectivityCategory   (ca22a1cb)
+2018-09-13T16:59:00.3904912+01:00 0HLGPI6QUFSBL:0000000B [INF] Policy execution successful. (0204925d)
+2018-09-13T16:59:00.3912141+01:00 0HLGPI6QUFSBL:0000000B [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"ArDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-09-13T16:59:00.3920525+01:00 0HLGPI6QUFSBL:0000000B [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:59:00.3926990+01:00 0HLGPI6QUFSBL:0000000B [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:59:00.3936485+01:00 0HLGPI6QUFSBL:0000000B [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-09-13T16:59:00.3939806+01:00 0HLGPI6QUFSBL:0000000B [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-09-13T16:59:00.3941239+01:00 0HLGPI6QUFSBL:0000000B [INF] Executing action method "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.GetConnectivityCategories (AR.LinesManagementSystem.Api)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T16:59:00.3949427+01:00 0HLGPI6QUFSBL:0000000B [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[CreatedBy], [c].[Description], [c].[Name], [c].[UpdatedAt], [c].[UpdatedBy]
+FROM [ConnectivityCategories] AS [c]" (0723d8ff)
+2018-09-13T16:59:00.3953012+01:00 0HLGPI6QUFSBL:0000000B [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-13T16:59:00.3956140+01:00 0HLGPI6QUFSBL:0000000B [INF] Executed action "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.GetConnectivityCategories (AR.LinesManagementSystem.Api)" in 4.8855ms (afa2e885)
+2018-09-13T16:59:00.3958768+01:00 0HLGPI6QUFSBL:0000000B [INF] Request finished in 5.5882ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-13T16:59:08.6817159+01:00 0HLGPI6QUFSBL:0000000C [INF] Request starting HTTP/1.1 OPTIONS http://localhost:51558/api/ConnectivityCategory   (ca22a1cb)
+2018-09-13T16:59:08.6819308+01:00 0HLGPI6QUFSBL:0000000C [INF] Policy execution successful. (0204925d)
+2018-09-13T16:59:08.6820862+01:00 0HLGPI6QUFSBL:0000000C [INF] Request finished in 0.4083ms 204  (791a596a)
+2018-09-13T16:59:08.6863812+01:00 0HLGPI6QUFSBL:0000000D [INF] Request starting HTTP/1.1 PUT http://localhost:51558/api/ConnectivityCategory application/json 61 (ca22a1cb)
+2018-09-13T16:59:08.6866426+01:00 0HLGPI6QUFSBL:0000000D [INF] Policy execution successful. (0204925d)
+2018-09-13T16:59:08.6910113+01:00 0HLGPI6QUFSBL:0000000D [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"ArDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-09-13T16:59:08.6918592+01:00 0HLGPI6QUFSBL:0000000D [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:59:08.6924072+01:00 0HLGPI6QUFSBL:0000000D [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:59:08.6932576+01:00 0HLGPI6QUFSBL:0000000D [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-09-13T16:59:08.6935604+01:00 0HLGPI6QUFSBL:0000000D [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-09-13T16:59:08.6939808+01:00 0HLGPI6QUFSBL:0000000D [INF] Executing action method "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.UpdateConnectivityCategory (AR.LinesManagementSystem.Api)" with arguments (["AR.LinesManagementSystem.Models.ConnectivityCategory"]) - ModelState is Valid (ba7f4ac2)
+2018-09-13T16:59:08.6974658+01:00 0HLGPI6QUFSBL:0000000D [INF] Executed DbCommand ("0"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[CreatedAt], [e].[CreatedBy], [e].[Description], [e].[Name], [e].[UpdatedAt], [e].[UpdatedBy]
+FROM [ConnectivityCategories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-09-13T16:59:08.7036068+01:00 0HLGPI6QUFSBL:0000000D [INF] Executed DbCommand ("1"ms) [Parameters=["@p4='?', @p0='?' (Size = 500), @p1='?' (Size = 250), @p2='?', @p3='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ConnectivityCategories] SET [Description] = @p0, [Name] = @p1, [UpdatedAt] = @p2, [UpdatedBy] = @p3
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-09-13T16:59:08.7055302+01:00 0HLGPI6QUFSBL:0000000D [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-13T16:59:08.7058780+01:00 0HLGPI6QUFSBL:0000000D [INF] Executed action "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.UpdateConnectivityCategory (AR.LinesManagementSystem.Api)" in 15.1341ms (afa2e885)
+2018-09-13T16:59:08.7060888+01:00 0HLGPI6QUFSBL:0000000D [INF] Request finished in 19.7447ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-13T16:59:08.7165051+01:00 0HLGPI6QUFSBL:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:51558/api/ConnectivityCategory   (ca22a1cb)
+2018-09-13T16:59:08.7167207+01:00 0HLGPI6QUFSBL:0000000E [INF] Policy execution successful. (0204925d)
+2018-09-13T16:59:08.7175176+01:00 0HLGPI6QUFSBL:0000000E [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"ArDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-09-13T16:59:08.7184435+01:00 0HLGPI6QUFSBL:0000000E [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:59:08.7190586+01:00 0HLGPI6QUFSBL:0000000E [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:59:08.7199391+01:00 0HLGPI6QUFSBL:0000000E [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-09-13T16:59:08.7202602+01:00 0HLGPI6QUFSBL:0000000E [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-09-13T16:59:08.7203870+01:00 0HLGPI6QUFSBL:0000000E [INF] Executing action method "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.GetConnectivityCategories (AR.LinesManagementSystem.Api)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T16:59:08.7209574+01:00 0HLGPI6QUFSBL:0000000E [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[CreatedBy], [c].[Description], [c].[Name], [c].[UpdatedAt], [c].[UpdatedBy]
+FROM [ConnectivityCategories] AS [c]" (0723d8ff)
+2018-09-13T16:59:08.7211957+01:00 0HLGPI6QUFSBL:0000000E [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-13T16:59:08.7213683+01:00 0HLGPI6QUFSBL:0000000E [INF] Executed action "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.GetConnectivityCategories (AR.LinesManagementSystem.Api)" in 4.4397ms (afa2e885)
+2018-09-13T16:59:08.7214853+01:00 0HLGPI6QUFSBL:0000000E [INF] Request finished in 5.0665ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-13T16:59:14.1769774+01:00 0HLGPI6QUFSBL:0000000F [INF] Request starting HTTP/1.1 OPTIONS http://localhost:51558/api/ConnectivityCategory   (ca22a1cb)
+2018-09-13T16:59:14.1772098+01:00 0HLGPI6QUFSBL:0000000F [INF] Policy execution successful. (0204925d)
+2018-09-13T16:59:14.1773696+01:00 0HLGPI6QUFSBL:0000000F [INF] Request finished in 0.4933ms 204  (791a596a)
+2018-09-13T16:59:14.1825401+01:00 0HLGPI6QUFSBL:00000010 [INF] Request starting HTTP/1.1 PUT http://localhost:51558/api/ConnectivityCategory application/json 61 (ca22a1cb)
+2018-09-13T16:59:14.1827626+01:00 0HLGPI6QUFSBL:00000010 [INF] Policy execution successful. (0204925d)
+2018-09-13T16:59:14.1834670+01:00 0HLGPI6QUFSBL:00000010 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"ArDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-09-13T16:59:14.1842654+01:00 0HLGPI6QUFSBL:00000010 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:59:14.1847999+01:00 0HLGPI6QUFSBL:00000010 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:59:14.1855917+01:00 0HLGPI6QUFSBL:00000010 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-09-13T16:59:14.1858889+01:00 0HLGPI6QUFSBL:00000010 [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-09-13T16:59:14.1862951+01:00 0HLGPI6QUFSBL:00000010 [INF] Executing action method "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.UpdateConnectivityCategory (AR.LinesManagementSystem.Api)" with arguments (["AR.LinesManagementSystem.Models.ConnectivityCategory"]) - ModelState is Valid (ba7f4ac2)
+2018-09-13T16:59:14.1878280+01:00 0HLGPI6QUFSBL:00000010 [INF] Executed DbCommand ("0"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[CreatedAt], [e].[CreatedBy], [e].[Description], [e].[Name], [e].[UpdatedAt], [e].[UpdatedBy]
+FROM [ConnectivityCategories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-09-13T16:59:14.1896847+01:00 0HLGPI6QUFSBL:00000010 [INF] Executed DbCommand ("0"ms) [Parameters=["@p4='?', @p0='?' (Size = 500), @p1='?' (Size = 250), @p2='?', @p3='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ConnectivityCategories] SET [Description] = @p0, [Name] = @p1, [UpdatedAt] = @p2, [UpdatedBy] = @p3
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-09-13T16:59:14.1907104+01:00 0HLGPI6QUFSBL:00000010 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-13T16:59:14.1909802+01:00 0HLGPI6QUFSBL:00000010 [INF] Executed action "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.UpdateConnectivityCategory (AR.LinesManagementSystem.Api)" in 7.9389ms (afa2e885)
+2018-09-13T16:59:14.1911917+01:00 0HLGPI6QUFSBL:00000010 [INF] Request finished in 8.6951ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-13T16:59:14.2063924+01:00 0HLGPI6QUFSBL:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:51558/api/ConnectivityCategory   (ca22a1cb)
+2018-09-13T16:59:14.2065783+01:00 0HLGPI6QUFSBL:00000011 [INF] Policy execution successful. (0204925d)
+2018-09-13T16:59:14.2072138+01:00 0HLGPI6QUFSBL:00000011 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"ArDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-09-13T16:59:14.2078905+01:00 0HLGPI6QUFSBL:00000011 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:59:14.2083191+01:00 0HLGPI6QUFSBL:00000011 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T16:59:14.2089121+01:00 0HLGPI6QUFSBL:00000011 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-09-13T16:59:14.2091804+01:00 0HLGPI6QUFSBL:00000011 [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-09-13T16:59:14.2094396+01:00 0HLGPI6QUFSBL:00000011 [INF] Executing action method "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.GetConnectivityCategories (AR.LinesManagementSystem.Api)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T16:59:14.2101470+01:00 0HLGPI6QUFSBL:00000011 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[CreatedBy], [c].[Description], [c].[Name], [c].[UpdatedAt], [c].[UpdatedBy]
+FROM [ConnectivityCategories] AS [c]" (0723d8ff)
+2018-09-13T16:59:14.2105444+01:00 0HLGPI6QUFSBL:00000011 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-13T16:59:14.2108692+01:00 0HLGPI6QUFSBL:00000011 [INF] Executed action "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.GetConnectivityCategories (AR.LinesManagementSystem.Api)" in 4.0827ms (afa2e885)
+2018-09-13T16:59:14.2110767+01:00 0HLGPI6QUFSBL:00000011 [INF] Request finished in 4.7055ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-13T17:38:00.3515497+01:00 0HLGPI6QUFSBM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51558/api/ConnectivityCategory   (ca22a1cb)
+2018-09-13T17:38:00.3517414+01:00 0HLGPI6QUFSBM:00000001 [INF] Policy execution successful. (0204925d)
+2018-09-13T17:38:00.3522128+01:00 0HLGPI6QUFSBM:00000001 [INF] Entity Framework Core "2.0.2-rtm-10011" initialized '"ArDBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-09-13T17:38:00.6440044+01:00 0HLGPI6QUFSBM:00000001 [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T17:38:00.6446917+01:00 0HLGPI6QUFSBM:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');" (0723d8ff)
+2018-09-13T17:38:00.6467437+01:00 0HLGPI6QUFSBM:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2018-09-13T17:38:00.6470689+01:00 0HLGPI6QUFSBM:00000001 [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2018-09-13T17:38:00.6472357+01:00 0HLGPI6QUFSBM:00000001 [INF] Executing action method "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.GetConnectivityCategories (AR.LinesManagementSystem.Api)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-13T17:38:00.6501052+01:00 0HLGPI6QUFSBM:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[CreatedBy], [c].[Description], [c].[Name], [c].[UpdatedAt], [c].[UpdatedBy]
+FROM [ConnectivityCategories] AS [c]" (0723d8ff)
+2018-09-13T17:38:00.6504350+01:00 0HLGPI6QUFSBM:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-13T17:38:00.6507129+01:00 0HLGPI6QUFSBM:00000001 [INF] Executed action "AR.LinesManagementSystem.Controllers.ConnectivityCategoryController.GetConnectivityCategories (AR.LinesManagementSystem.Api)" in 298.7472ms (afa2e885)
+2018-09-13T17:38:00.6508940+01:00 0HLGPI6QUFSBM:00000001 [INF] Request finished in 299.3571ms 200 application/json; charset=utf-8 (791a596a)
